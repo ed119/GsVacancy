@@ -1,0 +1,27 @@
+﻿<div ng-controller="adminController">
+
+    <h1>List Vacancies</h1>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Position</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="vacancy in vacancies">
+                <td>
+                    <a href="#" class="btn btn-default btn-xs">edit</a>
+                    <a href="#" class="btn btn-danger btn-xs">delete</a>
+                </td>
+                <td>{{vacancy.Position}}</td>
+                <td>{{vacancy.City}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        <a href="#" class="btn btn-primary">Add New Vacancy</a>
+    </p>
+</div>
